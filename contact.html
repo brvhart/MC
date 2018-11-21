@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>moonchild-site</title>
+    <meta charset="utf-8">
+    <meta content="site-re-design" name="moonchild">
+    <meta content="width=device-width, initial-scale=1" name="view-port">
+    <link href="css/styles.css" rel="stylesheet" type="text/css"><!-- POLYFILLS -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js" type="text/javascript">
+    </script>
+    <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+    <script type="text/javascript">
+    var nav = document.querySelector("nav ul"),
+       navToggle = document.querySelector("nav .skip");
+    if (navToggle) {
+     navToggle.addEventListener("click",
+     function(e) {
+     if (nav.className == "open") {
+       nav.className = "";
+     } else {
+       nav.className = "open";
+     }
+     e.preventDefault();
+     }, false);
+    }
+
+    /* Any click outside of the nav element will close the menu if it's open */
+    var specifiedElement = document.getElementById('nav');
+    document.addEventListener('click', function(events) {
+     // var isClickInside = specifiedElement.contains(event.target);
+     if (events.target.closest('#nav')) return;
+     // {
+     //   
+     // } 
+     // nav.className = "";
+    });
+    </script>
+</head>
+
+<body>
+    <a class="top" href="#">TOP</a>
+
+    <nav id="nav">
+        <div id="logo"><img class="logo" src="img/mc.png">
+        </div>
+        <label class="toggle" for="drop"><i aria-hidden="true" class="fa fa-bars"></i></label> <input id="drop" type="checkbox">
+
+        <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="content.html">look</a></li>
+        <li><a href="https://truthoughts.lnk.to/MoonchildVoyager" target="_blank">listen</a></li>
+        <li><a href="#">live</a></li>
+        <li><a href="contact.html">seek</a></li>
+        </ul>
+    </nav>
+
+
+
+
+<div class="contacts-page">
+
+     
+
+ <h3>MANAGEMENT</h3>
+ <p>Daniel Kellner<br>daniel@benchmarkla.com</p>
+
+<h3>BOOKING</h3>
+<p>Megan White<br>mwhite@icmpartners.com</p>
+
+<p>Liz Patone<br>epantone@icmpartners.com</p>
+
+</div>
+
+
+
+
+
+
+
+  
+
+<main>
+  
+
+
+     <section class="contact-container">
+
+
+
+    <h3>TRACK MOONCHILD</h3>
+<label for="lname">EMAIL</label>
+<div class="emailcontainer">
+  <form action="/action_page.php">
+    
+
+    
+    <input class="emailclass" type="text" id="lname" name="lastname" placeholder="Your email..">
+
+    
+    <select id="country" name="country">
+         <label for="country">Country</label>
+        <option value="south africa">SOUTH AFRICA</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  
+    <input type="submit" value="Subscribe">
+  </form>
+</div>
+
+</section>
+<footer>
+<div class="social-media">
+        
+            <li><a href="https://web.facebook.com/thisismoonchild/?_rdc=1&_rdr"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="https://www.instagram.com/thisismoonchild/?hl=en"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+        
+    </div>
+    
+    <div class="copy">Copyright © 2018. / TERMS OF USE / PRIVACY POLICY / design by brvhart</div>
+
+
+ 
+</footer>
+</body>
+</html>
